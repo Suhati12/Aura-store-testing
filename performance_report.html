@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aura Luxe Store - Performance Testing Report</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #FAF8F5; color: #1E1B18; padding: 2rem; margin: 0; }
+    .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 2.5rem; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .subtitle { color: #8C847C; margin-bottom: 2rem; }
+    .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
+    .card { background: #F4EFEA; padding: 1.5rem; border-radius: 12px; }
+    .card h3 { font-size: 0.85rem; color: #8C847C; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .card .val { font-size: 1.8rem; font-weight: 700; color: #C88A83; }
+    table { width: 100%; border-collapse: collapse; margin-top: 1.5rem; }
+    th, td { padding: 0.85rem 1rem; text-align: left; border-bottom: 1px solid #EBE5DF; }
+    th { background: #FAF8F5; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Performance Test Execution Report</h1>
+    <p class="subtitle">Aura Luxe Store - Real Browser Navigation Timing & Web Vitals Evaluation</p>
+
+    <div class="metrics-grid">
+      <div class="card">
+        <h3>TTFB (Latency)</h3>
+        <div class="val">40 ms</div>
+      </div>
+      <div class="card">
+        <h3>DOM Content Loaded</h3>
+        <div class="val">472 ms</div>
+      </div>
+      <div class="card">
+        <h3>Full Page Load</h3>
+        <div class="val">845 ms</div>
+      </div>
+      <div class="card">
+        <h3>First Contentful Paint</h3>
+        <div class="val">500 ms</div>
+      </div>
+    </div>
+
+    <h2>Detailed Performance Metrics & Budgets</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Metric Name</th>
+          <th>Measured Value</th>
+          <th>Budget Target</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Time to First Byte (TTFB)</td>
+          <td>40 ms</td>
+          <td>&le; 500 ms</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>DOM Content Loaded (DCL)</td>
+          <td>472 ms</td>
+          <td>&le; 2000 ms</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>Total Page Load Time</td>
+          <td>845 ms</td>
+          <td>&le; 3000 ms</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>First Contentful Paint (FCP)</td>
+          <td>500 ms</td>
+          <td>&le; 1800 ms</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>DNS Resolution Time</td>
+          <td>1 ms</td>
+          <td>Instant (Local)</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>TCP Handshake Time</td>
+          <td>1 ms</td>
+          <td>Instant (Local)</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>Total Static Resources Loaded</td>
+          <td>22 resources</td>
+          <td>Optimized</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>Total Transfer Size</td>
+          <td>1370.5 KB</td>
+          <td>Optimized</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+        <tr>
+          <td>DOM Nodes Count</td>
+          <td>695 elements</td>
+          <td>Clean Structure</td>
+          <td><span style="color:#2e7d32;font-weight:700;">PASS [OK]</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
