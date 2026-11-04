@@ -1,3 +1,4 @@
+
 """
 UI Testing: Search & Filter Tests
 Verifies real-time search modal, category filtering, price slider, and reset functionality.
